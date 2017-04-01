@@ -1,3 +1,7 @@
+div {
+  display: block;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -68,55 +72,87 @@ a:hover {
 header {
 	display: flex;
 	max-width: 960px;
-  height: 150px;
-  padding-bottom: 1em;
+  height: 281px;
 	margin: auto;
-
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #d6e8b8;
 }
 
 .logo {
-  position: relative;
-  width: 336px;
+  float: left;
+  width: 334px;
+}
+
+.logo a {
+  display: block;
+  height: 100%;
+}
+
+@media screen and (max-width: 701px) {
+.logo {width: 61%}
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  float: right;
+  padding-right: 4px;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+	flex: auto;
+}
+
+.nav-main ul li {
+  font-size: 1.25em;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-right: 4px;
+}
+
+.nav-main  {
+	margin-top: 9em
+}
+
+@media screen and (max-width:743px) {
+	.nav-main {margin-top: 10em; font-size: .90em;}
+}
+
+@media screen and (max-width:921px) {
+	.nav-main {border: none; margin-top: 10.3em; font-size: .80em;}
+}
+
+.nav-main ul{
+	margin: 0;
 }
 
 .main {
-  display: flex;
-  width: 960px;
-  margin: auto 0;
+
+}
+
+#slideshow-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #slideshow {
   position: relative;
   width: 100%;
-  height: 292px;
+  height: 280px;
+  overflow: hidden;
 
 }
 
 #slideshow  img {
   position: absolute;
 }
-
-/* #slideshow figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slide infinite;
-}
-
-@keyframes slide {
-{ left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-} */
 
 @keyframes xfade {
   0%{
