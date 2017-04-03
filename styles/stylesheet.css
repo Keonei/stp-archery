@@ -26,7 +26,7 @@ img {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -45,6 +45,7 @@ h2 {
   letter-spacing: .1rem;
 	text-align: center;
 	font-weight: bold;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -84,7 +85,7 @@ a:hover {
 header {
 	display: flex;
   flex-wrap: wrap;
-	max-width: 960px;
+	max-width: 1024px;
   height: 281px;
   background-color: grey;
 	margin: auto;
@@ -119,8 +120,8 @@ nav li a {
 }
 
 .main-nav {
-  padding-left: 10em;
-  margin-top: 12.5em;
+  padding-left: 17em;
+  margin-top: 14em;
 }
 
 .main-nav ul li {
@@ -161,12 +162,8 @@ nav li a {
 	margin: 0;
 }
 
-.main {
-
-}
-
 #slideshow-wrapper {
-  max-width: 960px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -176,7 +173,6 @@ nav li a {
   width: 100%;
   height: 280px;
   overflow: hidden;
-
 }
 
 #slideshow  img {
@@ -241,7 +237,7 @@ button {
   color: #fff;
   border-radius: .3em;
   padding: .3em .5em;
-  margin-left: 5.5em;
+  margin-left: 7em;
 }
 
 button a {
@@ -251,13 +247,17 @@ button a {
 .content {
   display: flex;
   justify-content: space-around;
-  width: 960px;
+  width: 1024px;
   height: 400px;
   margin: auto;
   padding-top: 2em;
 }
 
-.column1 {
+.column-teaser {
+  padding-bottom: 2em;
+}
+
+.column {
   font-weight: lighter;
   padding-left: 10px;
   padding-right: 10px;
@@ -268,19 +268,53 @@ button a {
   background: #fff;
   border-radius: 6px;
   margin-top: 0;
+}
+
+.content-lessons {
+  display: flex;
+  justify-content: space-around;
+  width: 1024px;
+  margin: auto;
+  padding-top: 2em;
+}
+
+.content-private {
+  display: flex;
+  justify-content: space-around;
+  width: 1024px;
+  margin: auto;
+  padding-top: 2em;
 }
 
 .column2 {
   font-weight: lighter;
   padding-left: 10px;
   padding-right: 10px;
-  width: 30%;
+  width: 32%;
   position: relative;
   padding: 20px;
   border: solid 1px #ebebeb;
   background: #fff;
   border-radius: 6px;
   margin-top: 0;
+}
+
+.column3 {
+  font-weight: lighter;
+  position: relative;
+  padding: 20px;
+  border: solid 1px #ebebeb;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 0 0 2em;
+}
+
+.col2 {
+  margin-left: 9em;
+}
+
+.col3 {
+  margin-left: 22em;
 }
 
 aside {
@@ -314,7 +348,7 @@ aside .feature {
 footer {
   display: flex;
   justify-content: space-between;
-	max-width: 960px;
+	max-width: 1024px;
   height: 220px;
   background-color: grey;
   font-size: .750em;
@@ -391,7 +425,7 @@ hr.line {
   color: #d9d9d9;
   font-size: .720em;
   letter-spacing: .1em;
-  max-width: 960px;
+  max-width: 1024px;
   padding: .5em .5em .5em 2em;
   margin: 0 auto;
 }
