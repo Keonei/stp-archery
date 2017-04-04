@@ -389,12 +389,33 @@ aside .feature {
   width: 50%;
 }
 
+.grid-col-2 {
+  width: 100%;
+  margin-top: 2em;
+  padding: 20px;
+  border: solid 1px #ebebeb;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.grid-col-3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
 .grid-gutter > [class^="grid-"] {
   padding: 1rem 1rem 0 0;
 }
 
 .grid-gutter > [class^="grid-"]:last-child {
   padding-right: 0;
+}
+
+#map {
+  max-width: 1024px;
+  height: 25em;
+  margin: auto;
 }
 
 footer {
