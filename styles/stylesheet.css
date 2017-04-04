@@ -430,9 +430,12 @@ address i {
   margin-left: 2em;
 }
 
+address p {
+  margin-top: 0;
+}
 
-address p + p {
-  margin-top: .5em;
+address li + li {
+  margin-top: 1em;
 }
 
 address a {
