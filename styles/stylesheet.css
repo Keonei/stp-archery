@@ -2,6 +2,10 @@ div {
   display: block;
 }
 
+a, button, input[type="submit"] {
+cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -80,6 +84,7 @@ a:hover {
   margin-left: 1.75vw;
   margin-right: 1.75vw;
 }
+
 
 header {
 	display: flex;
@@ -265,7 +270,16 @@ button {
 
 button a {
     text-decoration: none;
+    color: #fff;
+  	transition: all .2s ease-in;
+  	-webkit-transition: all .1 ease-in;
+  	-moz-transition: all .1s ease-in;
+  	-o-transition: all .1s ease in;
 }
+
+button:hover {
+		color: #000;
+		}
 
 .column-teaser {
   padding-bottom: 2em;
@@ -403,6 +417,7 @@ footer {
 
 address {
   font-style: normal;
+  line-height: 1.5em;
 }
 
 address i {
@@ -415,8 +430,9 @@ address i {
   margin-left: 2em;
 }
 
-address p {
-  margin: 0;
+
+address p + p {
+  margin-top: .5em;
 }
 
 address a {
