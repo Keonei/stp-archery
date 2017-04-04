@@ -136,20 +136,44 @@ nav li a {
   border-bottom-color: #d6e8b8;
 }
 
-@media screen and (max-width:997px) {
-	.main-nav {padding-left: 8em; }
+@media screen and (max-width:1039px) {
+	.main-nav {padding-left: 15em; }
 }
 
-@media screen and (max-width:967px) {
-	.main-nav {padding-left: 5em;}
+@media screen and (max-width:1015px) {
+	.main-nav {padding-left: 14em;}
 }
 
-@media screen and (max-width:910px) {
-	.main-nav {padding-left: 1em;}
+@media screen and (max-width:991px) {
+	.main-nav {padding-left: 12em;}
 }
 
-@media screen and (max-width:834px) {
-	.main-nav {padding-left: 0; font-size: .875em}
+@media screen and (max-width:975px) {
+	.main-nav {padding-left: 11em;}
+}
+
+@media screen and (max-width:941px) {
+	.main-nav {padding-left: 9em;}
+}
+
+@media screen and (max-width:908px) {
+	.main-nav {padding-left: 4em;}
+}
+
+@media screen and (max-width:829px) {
+	.main-nav {padding-left: 2em;}
+}
+
+@media screen and (max-width:808px) {
+	.main-nav {padding-left: 2em;}
+}
+
+@media screen and (max-width:800px) {
+	.main-nav {padding-left: 0;}
+}
+
+@media screen and (max-width:767px) {
+	.main-nav {padding-left: 0; font-size: .875em;}
 }
 
 @media screen and (max-width:760px) {
@@ -343,6 +367,8 @@ aside .feature {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .grid-col-1 {
@@ -447,4 +473,31 @@ hr.line {
 	float: right;
   color: #d9d9d9;
 	margin-right: 2em;
+}
+
+@media screen and (max-width:880px) {
+  hr.line {
+  	display: block;
+  	background-color: #d6e8b8;
+    width: 0;
+  	height: 1px;
+    float: left;
+  	border: 0 none;
+  }
+}
+
+  @media screen and (max-width:880px) {
+    .pages ::before {
+      content: none;
+      font-family: auto;
+      display: block;
+      float: none;
+  }
+}
+
+@media screen and (max-width:653px) {
+  footer .col:nth-child(2) {
+    clear: right;
+    visibility: hidden;
+  }
 }
