@@ -340,6 +340,23 @@ aside .feature {
   color: grey;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-col-1 {
+  width: 50%;
+}
+
+.grid-gutter > [class^="grid-"] {
+  padding: 1rem 1rem 0 0;
+}
+
+.grid-gutter > [class^="grid-"]:last-child {
+  padding-right: 0;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
