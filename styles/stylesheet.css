@@ -405,7 +405,7 @@ aside .feature {
 }
 
 .grid-gutter > [class^="grid-"] {
-  padding: 1rem 1rem 0 0;
+  padding: 0;
 }
 
 .grid-gutter > [class^="grid-"]:last-child {
